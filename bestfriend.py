@@ -6,6 +6,8 @@ print("| By Clay           |")
 print("+-------------------+")
 print('')
 
+
+
 while True:
 
     print("Hi. I'm the computer.")
@@ -28,6 +30,17 @@ while True:
 
     print("")
 
+
+
+
+
     response = input("Would you like to go again? (Y/n) ")
+
+
+    while response.lower not in ["n", "no", "nope", "nein", "y", "yes", "yep"]:
+    
+        response = input("Would you like to go again? (Y/n) ")
+    
+    
     if response.lower() in ["n", "no", "nope", "nein"]:
         break
